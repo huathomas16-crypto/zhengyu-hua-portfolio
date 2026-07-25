@@ -1,0 +1,62 @@
+{
+  "Header": {
+    "brandName": "ZHENGYU HUA",
+    "nav": {
+      "work": "WORK",
+      "about": "ABOUT",
+      "contact": "CONTACT"
+    }
+  },
+  "HomePage": {
+    "title": "Zhengyu Hua — Photography / Visual Stories",
+    "closingLine": "Selected works, 2024–2026"
+  },
+  "AboutPage": {
+    "title": "About",
+    "bio": {
+      "paragraph1": "ZHENGYU HUA is a junior at Pratt Institute and a photographer based between New York City and Ningbo. He picked up a camera two years ago and has been documenting his travels across cities ever since — each destination a new chapter in his visual diary.",
+      "paragraph2": "His work captures quiet moments, material details, and the fleeting poetry of urban life. His approach is slow and observational — every image is an attempt to see something more clearly, to hold a moment still long enough to understand it."
+    },
+    "basedIn": "Based in New York City / Ningbo",
+    "available": "Available for selected collaborations"
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "email": "Email",
+    "instagram": "Instagram",
+    "phoneChina": "Phone (China)",
+    "phoneUS": "Phone (US)",
+    "location": "Location"
+  },
+  "WorkPage": {
+    "title": "Work"
+  },
+  "ProjectPage": {
+    "backToAll": "All Work",
+    "previousProject": "Previous Project",
+    "nextProject": "Next Project"
+  },
+  "NotFound": {
+    "message": "Page not found.",
+    "backHome": "Back home"
+  },
+  "Footer": {
+    "copyright": "© {year} ZHENGYU HUA"
+  },
+  "Metadata": {
+    "siteName": "ZHENGYU HUA",
+    "home": {
+      "title": "ZHENGYU HUA — Photography",
+      "description": "Junior at Pratt Institute. Traveling between cities with a camera. Personal archive of quiet observations, material studies, and visual stories."
+    },
+    "about": {
+      "title": "About"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "work": {
+      "title": "Work"
+    }
+  }
+}

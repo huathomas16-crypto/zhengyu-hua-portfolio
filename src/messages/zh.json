@@ -1,0 +1,62 @@
+{
+  "Header": {
+    "brandName": "华正宇",
+    "nav": {
+      "work": "作品",
+      "about": "关于",
+      "contact": "联系"
+    }
+  },
+  "HomePage": {
+    "title": "华正宇 — 摄影 / 视觉故事",
+    "closingLine": "精选作品，2024–2026"
+  },
+  "AboutPage": {
+    "title": "关于",
+    "bio": {
+      "paragraph1": "华正宇是普瑞特艺术学院（Pratt Institute）的大三学生，常驻纽约市与宁波。他从两年前开始拿起相机，自此记录着他在各个城市间的旅行——每一座城市都是他视觉日记中新的篇章。",
+      "paragraph2": "他的作品捕捉静谧时刻、材质细节与都市生活中转瞬即逝的诗意。他的创作方式缓慢而充满观察力——每一张照片都是试图更清晰地看见某样事物，将某个瞬间凝固下来，足够长久地去理解它。"
+    },
+    "basedIn": "常驻纽约市 / 宁波",
+    "available": "接受特定合作邀约"
+  },
+  "ContactPage": {
+    "title": "联系",
+    "email": "邮箱",
+    "instagram": "Instagram",
+    "phoneChina": "电话（中国）",
+    "phoneUS": "电话（美国）",
+    "location": "所在地"
+  },
+  "WorkPage": {
+    "title": "作品"
+  },
+  "ProjectPage": {
+    "backToAll": "全部作品",
+    "previousProject": "上一个项目",
+    "nextProject": "下一个项目"
+  },
+  "NotFound": {
+    "message": "页面未找到。",
+    "backHome": "返回首页"
+  },
+  "Footer": {
+    "copyright": "© {year} 华正宇"
+  },
+  "Metadata": {
+    "siteName": "华正宇",
+    "home": {
+      "title": "华正宇 — 摄影",
+      "description": "普瑞特艺术学院大三学生。带着相机穿行于城市之间。个人影像档案：静谧观察、材质研究、视觉故事。"
+    },
+    "about": {
+      "title": "关于"
+    },
+    "contact": {
+      "title": "联系"
+    },
+    "work": {
+      "title": "作品"
+    }
+  }
+}
