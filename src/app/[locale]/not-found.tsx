@@ -1,7 +1,8 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 
 export default function NotFoundPage() {
+  const locale = useLocale();
   const t = useTranslations('NotFound');
 
   return (
@@ -12,6 +13,7 @@ export default function NotFoundPage() {
         </p>
         <Link
           href="/"
+          locale={locale}
           className="text-sm md:text-base text-foreground font-light hover:text-muted transition-colors duration-300"
         >
           &larr; {t('backHome')}
