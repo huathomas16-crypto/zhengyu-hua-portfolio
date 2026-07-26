@@ -5,6 +5,36 @@
 import { CuratedEntry, Project } from './types';
 
 export const projects: Project[] = [
+  // ── Hong Kong 2026 ──────────────────────────
+  {
+    slug: 'hong-kong-2026',
+    title: 'Hong Kong',
+    titleZh: '香港',
+    year: '2026',
+    location: 'Hong Kong',
+    locationZh: '香港',
+    description: '',
+    descriptionZh: '',
+    coverImage: {
+      src: '/images/projects/hong-kong/07.jpg',
+      alt: 'Hong Kong 2026 — cover image',
+      width: 4971,
+      height: 7457,
+    },
+    images: [
+      { src: '/images/projects/hong-kong/06.png', alt: 'Hong Kong 2026 — photograph', width: 1023, height: 1537 },
+      { src: '/images/projects/hong-kong/07.jpg', alt: 'Hong Kong 2026 — photograph', width: 4971, height: 7457 },
+      { src: '/images/projects/hong-kong/09.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
+      { src: '/images/projects/hong-kong/10.jpg', alt: 'Hong Kong 2026 — photograph', width: 4519, height: 6954 },
+      { src: '/images/projects/hong-kong/11.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
+      { src: '/images/projects/hong-kong/12.jpg', alt: 'Hong Kong 2026 — photograph', width: 5381, height: 3588 },
+      { src: '/images/projects/hong-kong/13.jpg', alt: 'Hong Kong 2026 — photograph', width: 4176, height: 7204 },
+      { src: '/images/projects/hong-kong/14.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
+      { src: '/images/projects/hong-kong/15.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
+      { src: '/images/projects/hong-kong/16.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
+    ],
+  },
+
   // ── Auckland ──────────────────────────────
   {
     slug: 'auckland',
@@ -125,36 +155,6 @@ export const projects: Project[] = [
       { src: '/images/projects/hong-kong/03.jpg', alt: 'Hong Kong 2025 — photograph', width: 4672, height: 7008 },
       { src: '/images/projects/hong-kong/04.jpg', alt: 'Hong Kong 2025 — photograph', width: 7008, height: 4672 },
       { src: '/images/projects/hong-kong/05.jpg', alt: 'Hong Kong 2025 — photograph', width: 7008, height: 4672 },
-    ],
-  },
-
-  // ── Hong Kong 2026 ──────────────────────────
-  {
-    slug: 'hong-kong-2026',
-    title: 'Hong Kong',
-    titleZh: '香港',
-    year: '2026',
-    location: 'Hong Kong',
-    locationZh: '香港',
-    description: '',
-    descriptionZh: '',
-    coverImage: {
-      src: '/images/projects/hong-kong/07.jpg',
-      alt: 'Hong Kong 2026 — cover image',
-      width: 4971,
-      height: 7457,
-    },
-    images: [
-      { src: '/images/projects/hong-kong/06.png', alt: 'Hong Kong 2026 — photograph', width: 1023, height: 1537 },
-      { src: '/images/projects/hong-kong/07.jpg', alt: 'Hong Kong 2026 — photograph', width: 4971, height: 7457 },
-      { src: '/images/projects/hong-kong/09.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
-      { src: '/images/projects/hong-kong/10.jpg', alt: 'Hong Kong 2026 — photograph', width: 4519, height: 6954 },
-      { src: '/images/projects/hong-kong/11.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
-      { src: '/images/projects/hong-kong/12.jpg', alt: 'Hong Kong 2026 — photograph', width: 5381, height: 3588 },
-      { src: '/images/projects/hong-kong/13.jpg', alt: 'Hong Kong 2026 — photograph', width: 4176, height: 7204 },
-      { src: '/images/projects/hong-kong/14.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
-      { src: '/images/projects/hong-kong/15.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
-      { src: '/images/projects/hong-kong/16.jpg', alt: 'Hong Kong 2026 — photograph', width: 7728, height: 5152 },
     ],
   },
 
