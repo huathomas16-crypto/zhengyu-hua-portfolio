@@ -29,9 +29,13 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
     <div className="mt-12 md:mt-16">
       {images.map((image, i) => {
         const layout = getLayout(i);
+        const isVertical = image.height > image.width;
 
-        const containerClass =
-          layout === 'full'
+        // Vertical images: cap at 80vh so they fit the viewport, center them.
+        // Horizontal images: use the existing full / left / right layout.
+        const containerClass = isVertical
+          ? 'w-full flex justify-center'
+          : layout === 'full'
             ? 'w-full'
             : layout === 'left'
               ? 'w-full md:w-[70%]'
@@ -50,6 +54,8 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
                 width={image.width}
                 height={image.height}
                 priority={i < 2}
+                maxHeight={isVertical ? '80vh' : undefined}
+                objectFit={isVertical ? 'contain' : 'cover'}
               />
               {image.caption && (
                 <figcaption className="mt-3 text-xs md:text-sm text-muted font-light tracking-wide">

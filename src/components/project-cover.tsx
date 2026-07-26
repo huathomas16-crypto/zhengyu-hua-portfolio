@@ -8,12 +8,15 @@ interface ProjectCoverProps {
   project: Project;
   featured?: boolean;
   delay?: number;
+  /** Maximum height CSS value for the cover image (e.g. "28rem") */
+  maxHeight?: string;
 }
 
 export default function ProjectCover({
   project,
   featured = false,
   delay = 0,
+  maxHeight,
 }: ProjectCoverProps) {
   return (
     <Link
@@ -26,6 +29,7 @@ export default function ProjectCover({
           alt={project.coverImage.alt}
           width={project.coverImage.width}
           height={project.coverImage.height}
+          maxHeight={maxHeight}
           className="transition-transform duration-600 ease-out group-hover:scale-[1.02]"
         />
       </div>

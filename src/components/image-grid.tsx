@@ -51,6 +51,7 @@ export default function ImageGrid({ entries }: ImageGridProps) {
                   width={image.width}
                   height={image.height}
                   priority={i < 3}
+                  maxHeight="80vh"
                   className="transition-transform duration-600 ease-out group-hover:scale-[1.02]"
                 />
               </div>

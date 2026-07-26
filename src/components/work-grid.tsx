@@ -23,6 +23,7 @@ export default function WorkGrid({ projects }: WorkGridProps) {
               project={project}
               featured={isFeatured}
               delay={i * 100}
+              maxHeight="28rem"
             />
           </FadeInSection>
         );

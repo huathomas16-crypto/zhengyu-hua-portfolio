@@ -13,6 +13,10 @@ interface OptimizedImageProps {
   className?: string;
   /** Override the computed aspect ratio (e.g. "3/2") */
   aspectRatio?: string;
+  /** Maximum height CSS value (e.g. "80vh", "28rem"). Caps container height; width shrinks to preserve ratio. */
+  maxHeight?: string;
+  /** CSS object-fit. Default "cover". Use "contain" to guarantee no cropping in gallery views. */
+  objectFit?: 'cover' | 'contain';
 }
 
 /**
@@ -33,6 +37,8 @@ export default function OptimizedImage({
   priority = false,
   className = '',
   aspectRatio,
+  maxHeight,
+  objectFit = 'cover',
 }: OptimizedImageProps) {
   const [loaded, setLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
@@ -45,11 +51,15 @@ export default function OptimizedImage({
   }, []);
 
   const ratio = aspectRatio || `${width} / ${height}`;
+  const fitClass = objectFit === 'contain' ? 'object-contain' : 'object-cover';
 
   return (
     <div
       className="relative overflow-hidden bg-border/10"
-      style={{ aspectRatio: ratio }}
+      style={{
+        aspectRatio: ratio,
+        ...(maxHeight ? { maxHeight } : {}),
+      }}
     >
       {/* Subtle skeleton placeholder — only visible during loading */}
       {!loaded && (
@@ -65,7 +75,7 @@ export default function OptimizedImage({
         loading={priority ? undefined : 'lazy'}
         onLoad={() => setLoaded(true)}
         className={`
-          block w-full h-full object-cover
+          block w-full h-full ${fitClass}
           transition-opacity duration-600 ease-out
           ${loaded ? 'opacity-100' : 'opacity-0'}
           ${className}
