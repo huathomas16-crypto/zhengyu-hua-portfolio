@@ -463,6 +463,7 @@ export const projects: Project[] = [
 // ── Home page curated selection ──────────────────────────
 
 export const curatedEntries: CuratedEntry[] = [
+  { projectSlug: 'hong-kong-2026',       imageIndex: 0, layout: 'full' },
   { projectSlug: 'new-york-city-2025',   imageIndex: 0, layout: 'full' },
   { projectSlug: 'hong-kong-2025',       imageIndex: 0, layout: 'wide-left' },
   { projectSlug: 'los-angeles',     imageIndex: 0, layout: 'half-right' },
