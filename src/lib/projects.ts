@@ -127,7 +127,6 @@ export const projects: Project[] = [
       { src: '/images/projects/hong-kong/05.jpg', alt: 'Hong Kong — photograph', width: 7008, height: 4672 },
       { src: '/images/projects/hong-kong/06.png', alt: 'Hong Kong — photograph', width: 1023, height: 1537 },
       { src: '/images/projects/hong-kong/07.jpg', alt: 'Hong Kong — photograph', width: 4971, height: 7457 },
-      { src: '/images/projects/hong-kong/08.PNG', alt: 'Hong Kong — photograph', width: 1023, height: 1537 },
       { src: '/images/projects/hong-kong/09.jpg', alt: 'Hong Kong — photograph', width: 7728, height: 5152 },
       { src: '/images/projects/hong-kong/10.jpg', alt: 'Hong Kong — photograph', width: 4519, height: 6954 },
       { src: '/images/projects/hong-kong/11.jpg', alt: 'Hong Kong — photograph', width: 7728, height: 5152 },
