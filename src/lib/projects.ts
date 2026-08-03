@@ -387,6 +387,34 @@ export const projects: Project[] = [
     ],
   },
 
+  // ── Suzhou ──────────────────────────────
+  {
+    slug: 'suzhou',
+    title: 'Suzhou',
+    titleZh: '苏州',
+    year: '2026',
+    location: 'Suzhou, China',
+    locationZh: '中国苏州',
+    description: '',
+    descriptionZh: '',
+    coverImage: {
+      src: '/images/projects/suzhou/01.jpg',
+      alt: 'Suzhou — cover image',
+      width: 4624,
+      height: 6937,
+    },
+    images: [
+      { src: '/images/projects/suzhou/02.jpg', alt: 'Suzhou — photograph', width: 4939, height: 7409 },
+      { src: '/images/projects/suzhou/03.jpg', alt: 'Suzhou — photograph', width: 6557, height: 4371 },
+      { src: '/images/projects/suzhou/04.jpg', alt: 'Suzhou — photograph', width: 5152, height: 7728 },
+      { src: '/images/projects/suzhou/05.jpg', alt: 'Suzhou — photograph', width: 7728, height: 5152 },
+      { src: '/images/projects/suzhou/06.jpg', alt: 'Suzhou — photograph', width: 5080, height: 7620 },
+      { src: '/images/projects/suzhou/07.jpg', alt: 'Suzhou — photograph', width: 7728, height: 5152 },
+      { src: '/images/projects/suzhou/08.jpg', alt: 'Suzhou — photograph', width: 5051, height: 7576 },
+      { src: '/images/projects/suzhou/09.jpg', alt: 'Suzhou — photograph', width: 5152, height: 7728 },
+    ],
+  },
+
   // ── Vancouver ──────────────────────────────
   {
     slug: 'vancouver',
