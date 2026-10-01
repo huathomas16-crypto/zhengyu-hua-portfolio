@@ -33,6 +33,7 @@ export default function ImageGrid({ entries }: ImageGridProps) {
         const { image, project: rawProject } = resolved;
         const project = localizedProject(rawProject, locale);
         const layoutClass = LAYOUT_CLASSES[entry.layout];
+        const isVertical = image.height > image.width;
 
         return (
           <FadeInSection
@@ -45,15 +46,18 @@ export default function ImageGrid({ entries }: ImageGridProps) {
               className="block group cursor-pointer"
             >
               <div className="overflow-hidden">
-                <OptimizedImage
-                  src={image.src}
-                  alt={image.alt}
-                  width={image.width}
-                  height={image.height}
-                  priority={i < 3}
-                  maxHeight="80vh"
-                  className="transition-transform duration-600 ease-out group-hover:scale-[1.02]"
-                />
+                <div className={isVertical ? 'max-w-xl mx-auto' : ''}>
+                  <OptimizedImage
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    priority={i < 3}
+                    maxHeight={isVertical ? undefined : '80vh'}
+                    objectFit={isVertical ? 'contain' : 'cover'}
+                    className="transition-transform duration-600 ease-out group-hover:scale-[1.02]"
+                  />
+                </div>
               </div>
 
               <div className="mt-2 md:mt-3">

@@ -31,7 +31,10 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
         const layout = getLayout(i);
         const isVertical = image.height > image.width;
 
-        // Vertical images: cap at 80vh so they fit the viewport, center them.
+        // Vertical images: cap the container width so aspect-ratio produces
+        // a reasonable height. Using max-w-xl (~36rem) keeps the portrait
+        // image comfortably within the viewport without any CSS max-height
+        // + aspect-ratio width-transfer issues.
         // Horizontal images: use the existing full / left / right layout.
         const containerClass = isVertical
           ? 'w-full flex justify-center'
@@ -48,15 +51,16 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
             className={containerClass}
           >
             <figure className="my-10 md:my-14 m-0">
-              <OptimizedImage
-                src={image.src}
-                alt={image.alt}
-                width={image.width}
-                height={image.height}
-                priority={i < 2}
-                maxHeight={isVertical ? '80vh' : undefined}
-                objectFit={isVertical ? 'contain' : 'cover'}
-              />
+              <div className={isVertical ? 'max-w-xl mx-auto' : ''}>
+                <OptimizedImage
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  priority={i < 2}
+                  objectFit="contain"
+                />
+              </div>
               {image.caption && (
                 <figcaption className="mt-3 text-xs md:text-sm text-muted font-light tracking-wide">
                   {image.caption}
