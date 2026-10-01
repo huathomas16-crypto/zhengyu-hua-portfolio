@@ -43,12 +43,12 @@ export default function ContactPage() {
                   {t('instagram')}
                 </span>
                 <a
-                  href="https://instagram.com/zhengyuhua"
+                  href="https://instagram.com/qualia_thomas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground hover:text-muted transition-colors duration-300"
                 >
-                  @zhengyuhua
+                  @qualia_thomas
                 </a>
               </div>
 
