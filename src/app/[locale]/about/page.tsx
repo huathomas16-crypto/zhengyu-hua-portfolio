@@ -44,13 +44,6 @@ export default function AboutPage() {
                 {t('title')}
               </h1>
 
-              <p className="text-foreground/85 m-0">
-                {t('bio.paragraph1')}
-              </p>
-              <p className="text-foreground/85 m-0">
-                {t('bio.paragraph2')}
-              </p>
-
               <div className="pt-4 space-y-1">
                 <p className="text-sm text-muted font-light tracking-wide m-0">
                   {t('basedIn')}

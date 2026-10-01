@@ -299,6 +299,8 @@ export const projects: Project[] = [
       { src: '/images/projects/new-york-city/16.jpg', alt: 'New York City 2026 — photograph', width: 8192, height: 5464 },
       { src: '/images/projects/new-york-city/17.jpg', alt: 'New York City 2026 — photograph', width: 8192, height: 5464 },
       { src: '/images/projects/new-york-city/18.jpg', alt: 'New York City 2026 — photograph', width: 8192, height: 5464 },
+      { src: '/images/projects/new-york-city/19.jpg', alt: 'New York City 2026 — photograph', width: 5152, height: 7728 },
+      { src: '/images/projects/new-york-city/20.jpg', alt: 'New York City 2026 — photograph', width: 5152, height: 7728 },
     ],
   },
 
